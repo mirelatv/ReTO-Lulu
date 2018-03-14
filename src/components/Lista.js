@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 
-
-
+const hobbys=['leer','didujar','jugar']
 
 const Lista = ()=> {
 
-
 		return (
-			<div className="App ">
-				
-					<ul>
-            <li>Tocar  la guitarra</li>
-            <li> Leer</li>
-            <li> Jugar con mi hija</li>
-            </ul>
-
+			<div >
+				<ul>
+         {hobbys.map(hobbys,key)}=>
+				 <li key={key}> {hobbys}</li>}
+       </ul>
        
 			</div>
 		);
